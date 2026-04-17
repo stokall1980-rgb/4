@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoBooth Magic - Rp5.000/Foto</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+    
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1 class="logo">📸 PhotoBooth Magic</h1>
+            <div class="price-tag">HANYA Rp 5.000 / Foto</div>
+            <p class="subtitle">Filter Keren + Download Instan!</p>
+        </div>
+
+        <!-- Payment Section -->
+        <div class="payment-section" id="paymentSection">
+            <h2>💳 Bayar Dulu, Photo Seru!</h2>
+            <p class="payment-desc">Klik tombol bayar, tunjukkan bukti ke admin, lalu nikmati photobooth!</p>
+            <button class="payment-btn" id="paymentBtn">
+                💰 BAYAR Rp 5.000
+            </button>
+            <div class="payment-info">
+                <p>* Transfer ke : <strong>0812-3456-7890 (Admin)</strong></p>
+                <p>atau QRIS / Dana / OVO / Gopay</p>
+            </div>
+        </div>
+
+        <!-- Photobooth Section -->
+        <div class="photobooth" id="photoboothSection">
+            <div class="camera-section">
+                <h3>📹 Kamera Live</h3>
+                <video id="video" autoplay playsinline muted></video>
+                
+                <div class="filters-container">
+                    <h4>Pilih Filter:</h4>
+                    <div class="filters">
+                        <button class="filter-btn active" data-filter="none">Normal</button>
+                        <button class="filter-btn" data-filter="vintage">Vintage</button>
+                        <button class="filter-btn" data-filter="polaroid">Polaroid</button>
+                        <button class="filter-btn" data-filter="cyberpunk">Cyberpunk</button>
+                        <button class="filter-btn" data-filter="dreamy">Dreamy</button>
+                        <button class="filter-btn" data-filter="grayscale">B&W</button>
+                        <button class="filter-btn" data-filter="retro">Retro 80s</button>
+                    </div>
+                </div>
+                
+                <div class="capture-buttons">
+                    <button class="capture-btn" id="captureBtn">
+                        <span id="countdown">📸 AMBIL FOTO</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="preview-section">
+                <h3>✨ Hasil Foto</h3>
+                <div class="preview-area">
+                    <canvas id="canvas" class="hidden"></canvas>
+                    <img id="photo" class="hidden" alt="Hasil Foto">
+                </div>
+                
+                <div class="result-buttons">
+                    <button class="capture-btn download-btn" id="downloadBtn">
+                        💾 DOWNLOAD FOTO
+                    </button>
+                    <button class="capture-btn secondary-btn" id="newBtn">
+                        📷 FOTO LAGI
+                    </button>
+                </div>
+                
+                <div class="share-section">
+                    <p>Bagikan ke:</p>
+                    <div class="social-buttons">
+                        <button class="social-btn whatsapp">📱 WhatsApp</button>
+                        <button class="social-btn instagram">📸 Instagram</button>
+                        <button class="social-btn tiktok">🎵 TikTok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
